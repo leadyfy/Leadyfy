@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leadyfy CRM - Leads</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+
+        <h2>Leadyfy</h2>
+
+        <ul>
+    <li><a href="index.html">🏠 Dashboard</a></li>
+    <li><a href="leads.html" class="active">👥 Leads</a></li>
+    <li><a href="followup.html">📞 Follow Up</a></li>
+    <li><a href="loans.html">💰 Loans</a></li>
+    <li><a href="reports.html">📊 Reports</a></li>
+    <li><a href="settings.html">⚙ Settings</a></li>
+</ul>
+
+    </div>
+
+    <!-- Main -->
+    <div class="main">
+
+        <div class="top-bar">
+
+            <h1>All Leads</h1>
+
+            <div class="top-actions">
+
+                <input
+                    type="text"
+                    id="searchBox"
+                    placeholder="Search by Name or Mobile..."
+                    onkeyup="searchLead()">
+
+                <button onclick="window.location.href='index.html'">
+                    ➕ Add Lead
+                </button>
+
+            </div>
+
+        </div>
+
+        <table class="lead-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Mobile</th>
+                    <th>Loan Type</th>
+                    <th>Loan Amount</th>
+                    <th>Date</th>
+                    <th>Action</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="leadTable">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <script src="../js/leads.js"></script>
+
+</body>
+
+</html>
