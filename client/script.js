@@ -1,3 +1,7 @@
+document.getElementById("addLeadBtn").addEventListener("click", function () {
+    alert("Add Lead Button Working ✅");
+});
+
 async function loadDashboard() {
     try {
         const response = await fetch("http://localhost:5000/api/dashboard");
